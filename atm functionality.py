@@ -19,3 +19,5 @@ def isatm():
          break
     else:
        print('please enter a valid pin') 
+isatm()
+
