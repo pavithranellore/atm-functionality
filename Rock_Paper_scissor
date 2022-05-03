@@ -1,0 +1,22 @@
+import random
+possible_actions=["rock","paper","scissor"]
+computer_action=random.choice(possible_actions)
+user_action=input("enter a choice:")
+print(f"\n you choose{user_action},computer_action{computer_action}:\n")
+if user_action==computer_action:
+    print("the game was tie")
+elif user_action=="rock":
+   if computer_action=="scissor":
+       print("rock smashed the scissor,you won the game")
+   else:
+      print("paper wrapped the rock,computer won the game")
+elif user_action=="paper":
+   if computer_action=="scissor":
+       print("scissor cuts the paper,computer won the game")
+   else:
+       print("paper wraps the rock,you won the game")
+elif user_action=="scissor":
+    if computer_action=="paper":
+       print("scissor cuts the paper,you won the game")
+    else:
+       print("rock smashes the scissor,computer won the game")
